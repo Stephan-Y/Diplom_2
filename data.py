@@ -5,8 +5,9 @@ class Url:
     CREATE_USER = URL + '/api/auth/register'
     REGISTER_USER = URL + '/api/auth/register'
     UPDATE_USER = URL + '/api/auth/user'
-    ORDER = URL + '/api/orders'
-    INGREDIENT = URL + '/api/ingredients'
+    GET_USER = URL + '/api/auth/user'
+    MAKE_ORDER = URL + '/api/orders'
+    GET_INGREDIENTS = URL + '/api/ingredients'
 
 
 class Error:
@@ -20,6 +21,6 @@ class Error:
 
 
 class Ingredient:
-    IMMORTAL_BURGER = {"ingredients": ["61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f"]}
+    METEOR_BURGER = {"ingredients": ["60d3b41abdacab0026a733c6", "609646e4dc916e00276b2870"]}
     INCORRECT_BURGER = {"ingredients": ["61c0c5INCORRECT1bdaaa6d", "61c0c5a71INCORRECTdaaa72"]}
     EMPTY_BURGER = {"ingredients": []}
