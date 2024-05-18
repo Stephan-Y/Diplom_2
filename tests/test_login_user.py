@@ -6,7 +6,7 @@ import requests
 
 class TestLoginUser:
 
-    @allure.title('проверка корректного логирования зарегистрированного пользователя')
+    @allure.title('Проверка корректного логирования зарегистрированного пользователя')
     def test_login_correct_user_data(self, gen_new_user_and_register):
         user = gen_new_user_and_register
         payload = {

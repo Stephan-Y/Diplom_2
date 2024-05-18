@@ -1,3 +1,6 @@
+from helpers import UserTestData
+
+
 class Url:
     URL = 'https://stellarburgers.nomoreparties.site'
     LOGIN_USER = URL + '/api/auth/login'
@@ -24,3 +27,12 @@ class Ingredient:
     METEOR_BURGER = {"ingredients": ["60d3b41abdacab0026a733c6", "609646e4dc916e00276b2870"]}
     INCORRECT_BURGER = {"ingredients": ["61c0c5INCORRECT1bdaaa6d", "61c0c5a71INCORRECTdaaa72"]}
     EMPTY_BURGER = {"ingredients": []}
+
+
+class NewUser:
+    gen_new_user_name = {'email': UserTestData.gen_email(),
+                         'name': 'new' + UserTestData.gen_name()}
+    gen_new_user_email = {'email': 'new' + UserTestData.gen_email(),
+                          'name': UserTestData.gen_name()}
+    gen_new_user_email_and_name = {'email': 'new' + UserTestData.gen_email(),
+                                   'name': 'new' + UserTestData.gen_name()}

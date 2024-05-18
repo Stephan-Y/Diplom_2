@@ -12,7 +12,7 @@ class UserTestData:
     @staticmethod
     def gen_email():
         email = UserTestData.gen_name() + "@yandex.ru"
-        return email
+        return email.lower()
 
     @staticmethod
     def gen_password():
@@ -62,3 +62,5 @@ class UserTestData:
         user_data = {"email": "", "password": UserTestData.gen_password(),
                      "name": UserTestData.gen_name()}
         return user_data
+
+
